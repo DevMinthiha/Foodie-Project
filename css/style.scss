@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+
+$theme-colors: (
+  "primary":    #3d6cb9,
+  "secondary":  #a6acec,
+  "success":    #17b978,
+  "info":       #00fff0,
+  "warning":    #eac100,
+  "danger":     #c03546,
+  "light":      #e2f3f5,
+  "dark":       #3f3b3b
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+@mixin svgSizing() {
+  width: 65px;
+  height: 65px;
+  fill: var(--bs-success);
+}
+
+.services-svg {
+  @include svgSizing();
+}
+.deli{
+  @include svgSizing();
+}
+.pizza {
+  @include svgSizing();
+}
+.navbar {
+  background-color: #ffffffb5;
+  backdrop-filter: blur(15px) contrast(130%);
+  z-index: 3;
+}
+
+.scroll-to-top{
+  bottom: 50px;
+  right: 50px;
+  display: none;
+}
